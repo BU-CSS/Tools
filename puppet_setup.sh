@@ -2,7 +2,7 @@
 room=$1
 pc=$2
 
-echo "bucss-kali-12-$pc" > /etc/hostname
+echo "bucss-kali-$room-$pc" > /etc/hostname
 
 if [ -n "$(grep puppet /etc/hosts)" ]
 then
