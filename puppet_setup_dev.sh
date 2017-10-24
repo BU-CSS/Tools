@@ -2,7 +2,7 @@
 room=$1
 pc=$2
 
-sudo apt install puppet
+sudo apt install puppet -y
 echo "bucss-dev-$room-$pc" > /etc/hostname
 
 if [ -n "$(grep puppet /etc/hosts)" ]
